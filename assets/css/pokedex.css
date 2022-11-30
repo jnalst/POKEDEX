@@ -90,6 +90,8 @@
     padding: 1rem;
     border-radius: 1rem;
     color: #ffff;
+    animation: animation 0.5s ease-in;
+    
 }
 
 .pokemon li {
@@ -159,6 +161,7 @@
     background-color: #6c79db;
     border: none;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 
@@ -177,5 +180,15 @@
 @media screen and (min-width: 992px) {
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+@keyframes animation {
+    0% { 
+        opacity: 0;
+            }
+    100%{
+        opacity: 1;
     }
 }
